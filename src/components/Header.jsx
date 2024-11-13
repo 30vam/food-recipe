@@ -6,7 +6,7 @@ const Header = ({title = "TEST", img, type}) => {
   const headerImg = selectRandomElement(images);
   console.log(images);
   return (
-    <header className='w-full h-dvh'>
+    <header className='w-full select-none h-dvh'>
       <div className='relative w-full h-full'>
         <img src={img ?? headerImg} alt="Header Image" className='object-cover w-full h-full' />
       </div>
