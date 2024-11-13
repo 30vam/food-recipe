@@ -6,12 +6,13 @@ const Header = ({title = "TEST", heroImages, type}) => {
     <header className='w-full select-none h-dvh'>
       <HeroImage heroImages={heroImages}/>
 
-      <div className='absolute bottom-0 w-full h-full bg-gradient-to-t from-black to-transparent'>
-      </div>
-
+      {/* Black to transparent gradient that appears at the bottom of the header */}
+      <div className='absolute bottom-0 w-full h-full bg-gradient-to-t from-black to-transparent'></div>
+      
+      { /* Header title, text, etc. */ }
       <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-8 px-6 pt-20 text-center text-white'>
         <h1 className='text-5xl font-bold sm:text-7xl'>{title}</h1>
-        {/* Only show this if type prop exists */}
+        {/* Only show this if type prop exists (Which page?) */}
         {type && (
           <p className='text-xl sm:text-3xl'>Hungry and tired of the same boring food? Don&apos;t worry, We&apos;ve got your back!
             <br />

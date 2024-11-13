@@ -6,7 +6,7 @@ const HeroImage = ({ heroImages }) => {
   const headerImg = heroImages ? selectRandomElement(heroImages) : selectRandomElement(defaultHeroImages);
   
   return (
-    <div className='relative w-full h-full'>
+    <div className='w-full h-full'>
       <img src={headerImg} alt="Header Image" className='object-cover w-full h-full' />
     </div>
   )
