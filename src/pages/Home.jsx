@@ -3,7 +3,7 @@ import Header from "../components/Header"
 const Home = () => {
   return (
     <main className="flex flex-col w-full">
-        <Header />
+        <Header title={"Food Recipes"}/>
     </main>
   )
 }
