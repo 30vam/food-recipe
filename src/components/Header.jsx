@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { selectRandomElement } from "../utils/utils";
 
 const Header = ({title = "TEST", img, type}) => {
-  const images = Object.values(import.meta.glob('../images/banners/*', { eager: true, query: '?url', import: 'default' }));   
+  const images = Object.values(import.meta.glob('../images/banners/*.{jpg, jpeg, png}', { eager: true, query: '?url', import: 'default' }));   
   const headerImg = selectRandomElement(images);
   console.log(images);
   return (
@@ -18,9 +18,9 @@ const Header = ({title = "TEST", img, type}) => {
         <h1 className='text-5xl font-bold sm:text-7xl'>{title}</h1>
         {/* Only show this if type prop exists */}
         {type && (
-          <p className='text-2xl sm:text-4xl'>Hungry and tired of the same boring food? Don&apos;t worry, We&apos;ve got your back!
+          <p className='text-xl sm:text-3xl'>Hungry and tired of the same boring food? Don&apos;t worry, We&apos;ve got your back!
             <br />
-            <span className='text-base sm:text-lg'>Just tell your wife where you found the recipes!</span>
+            <span className='hidden text-base sm:text-lg md:block'>Just tell your wife where you found the recipes!</span>
           </p>
         )}
       </div>
