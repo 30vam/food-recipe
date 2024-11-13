@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types'
-import { selectRandomElement } from "../utils/utils";
+import HeroImage from './HeroImage'
 
-const Header = ({title = "TEST", img, type}) => {
-  const images = Object.values(import.meta.glob('../images/banners/*.{jpg, jpeg, png}', { eager: true, query: '?url', import: 'default' }));   
-  const headerImg = selectRandomElement(images);
-  console.log(images);
+const Header = ({title = "TEST", heroImages, type}) => {
   return (
     <header className='w-full select-none h-dvh'>
-      <div className='relative w-full h-full'>
-        <img src={img ?? headerImg} alt="Header Image" className='object-cover w-full h-full' />
-      </div>
+      <HeroImage heroImages={heroImages}/>
 
       <div className='absolute bottom-0 w-full h-full bg-gradient-to-t from-black to-transparent'>
       </div>
@@ -30,7 +25,7 @@ const Header = ({title = "TEST", img, type}) => {
 
 Header.propTypes = {
   title: PropTypes.string,
-  img: PropTypes.string,
+  heroImages: PropTypes.arrayOf(PropTypes.string), // An Array of image URLs
   type: PropTypes.string
 }
 
