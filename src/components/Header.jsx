@@ -14,7 +14,7 @@ const Header = ({title = "TEST", img, type}) => {
       <div className='absolute bottom-0 w-full h-full bg-gradient-to-t from-black to-transparent'>
       </div>
 
-      <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-8 px-6 pb-40 text-center text-white'>
+      <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-8 px-6 pt-20 text-center text-white'>
         <h1 className='text-5xl font-bold sm:text-7xl'>{title}</h1>
         {/* Only show this if type prop exists */}
         {type && (
