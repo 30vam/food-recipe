@@ -1,5 +1,7 @@
 export default function Home () {
   return (
-    <div>home</div>
+    <main className="flex flex-col w-full">
+        
+    </main>
   )
 }
