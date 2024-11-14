@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import HeroImage from './HeroImage'
+import Button from './Button'
 
 const Header = ({title = "TEST", heroImages, type}) => {
   return (
@@ -20,6 +21,8 @@ const Header = ({title = "TEST", heroImages, type}) => {
           </p>
         )}
       </div>
+
+      <Button />
     </header>
   )
 }

@@ -2,7 +2,9 @@ import PropTypes from 'prop-types'
 
 const Navbar = (props) => {
   return (
-    <div>Navbar</div>
+    <nav>
+      
+    </nav>
   )
 }
 
