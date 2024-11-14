@@ -19,9 +19,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route index element={<Home />}/>
-        <Route path="recipes/:id" element={<RecipeDetails />}/>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}/>
+          <Route path="recipes/:id" element={<RecipeDetails />}/>
+        </Route>
       </Routes>
     </>
   )

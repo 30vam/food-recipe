@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types'
 import HeroImage from './HeroImage'
-import Navbar from './Navbar'
 
 const Header = ({title = "TEST", heroImages, type}) => {
   return (
     <header className='w-full select-none h-dvh'>
-      <Navbar />
       <HeroImage heroImages={heroImages}/>
 
       {/* Black to transparent gradient that appears at the bottom of the header */}
