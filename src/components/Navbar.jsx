@@ -14,9 +14,9 @@ const Navbar = ({logo}) => {
       </a>
 
       <ul className='flex gap-12 text-xl'>
-        <li><a href="#home" className='text-white transition-colors ease-out hover:text-green-400'>Home</a></li>
-        <li><a href="#explore" className='text-white transition-colors ease-out hover:text-green-400'>Explor</a></li>
-        <li><a href="#favorites" className='text-white transition-colors ease-out hover:text-green-400'>Favorites</a></li>
+        <li><a href="#home" className='text-white transition-colors ease-out hover:text-blue-400'>Home</a></li>
+        <li><a href="#explore" className='text-white transition-colors ease-out hover:text-blue-400'>Explore</a></li>
+        <li><a href="#favorites" className='text-white transition-colors ease-out hover:text-blue-400'>Favorites</a></li>
       </ul>
       
       <Button label='Sign in'/>
