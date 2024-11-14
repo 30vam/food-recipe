@@ -5,23 +5,22 @@ const defaultClickHandler = () => {
   console.log('CLICKED');
 }
 
-const Button = ({ label="Label", clickHandler = defaultClickHandler }) => {
+const Button = ({ isDisabled = false, buttonType = "button", icon, label="Label", buttonStyle, clickHandler = defaultClickHandler }) => {
 
   return (
-    <div className='btn-container'>
-      <button onClick={clickHandler} className='neon-btn'>
-      {label}
+    <button disabled={isDisabled} type={buttonType} onClick={clickHandler} className={`hidden md:block ${buttonStyle}`}>
+      <span className='flex-1'>{label}</span>
+      {icon && <div className='relative size-6'>{icon}</div>}
     </button>
-    </div>
   )
 }
 
 Button.propTypes = {
+  isDisabled: PropTypes.bool,
+  buttonType: PropTypes.string,
+  icon: PropTypes.string,
   label: PropTypes.string,
-  backgroundColor: PropTypes.string,
-  hoverBackgroundColor: PropTypes.string,
-  textColor: PropTypes.string,
-  hoverTextColor: PropTypes.string,
+  buttonStyle: PropTypes.string,
   clickHandler: PropTypes.func
 }
 

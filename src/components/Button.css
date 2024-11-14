@@ -13,7 +13,7 @@
 
 .neon-btn:hover {
   background: linear-gradient(144deg,rgb(98, 96, 255), #6451e2 40%,#AF40FF);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .neon-btn::before {
