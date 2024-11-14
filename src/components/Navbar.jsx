@@ -24,8 +24,8 @@ const Navbar = ({logo}) => {
       <Button label='Sign in' buttonStyle={"neon-btn"}/>
 
       {/*Hamburger button */}
-      <button className='block text-5xl text-white md:hidden'>
-        {open ? <AiOutlineClose /> : <HiMenuAlt3 />}
+      <button className='block md:hidden'>
+        {open ? <AiOutlineClose /> : <HiMenuAlt3 color='white' size='48px'/>}
       </button>
     </nav>
   )
