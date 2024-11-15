@@ -12,13 +12,13 @@ const HamburgerMenu = ({styleClass}) => {
   }
 
   return (
-    <>
+    <div className='md:hidden'>
       <input type="checkbox" role="button" aria-label="Display the menu" onClick={clickHandler} className={`${styleClass} z-30 relative`}></input>
 
-      <div className='absolute top-0 right-0 z-20 flex w-full px-4 bg-black bg-opacity-75 min-h-dvh md:hidden'>
+      <div className={`${isVisible ? 'flex' : 'hidden'} absolute top-0 right-0 z-20 w-full px-4 bg-black bg-opacity-75 h-dvh`}>
 
       </div>
-    </>
+    </div>
   )
 }
 
