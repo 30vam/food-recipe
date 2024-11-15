@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types'
-import Button from './Button'
-import Logo from '../images/logo.png'
-import { HiMenuAlt3 } from "react-icons/hi";
-import { AiOutlineClose } from "react-icons/ai";
 import { useState } from 'react';
+import Button from './Button'
+import HamburgerMenu from './HamburgerMenu'
+import Logo from '../images/logo.png'
 
 const Navbar = ({logo}) => {
   // State for toggling on mobile
@@ -22,11 +21,7 @@ const Navbar = ({logo}) => {
       </ul>
       
       <Button label='Sign in' buttonStyle={"neon-btn"}/>
-
-      {/*Hamburger button */}
-      <button className='block md:hidden'>
-        {open ? <AiOutlineClose /> : <HiMenuAlt3 color='white' size='48px'/>}
-      </button>
+      <HamburgerMenu styleClass={'hamburger-menu'}/>
     </nav>
   )
 }
@@ -35,4 +30,4 @@ Navbar.propTypes = {
   logo: PropTypes.string
 }
 
-export default Navbar 
+export default Navbar

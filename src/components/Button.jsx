@@ -5,10 +5,9 @@ const defaultClickHandler = () => {
   console.log('CLICKED');
 }
 
-const Button = ({ isDisabled = false, buttonType = "button", icon, label="Label", buttonStyle, clickHandler = defaultClickHandler }) => {
-
+const Button = ({ isDisabled = false, buttonType = "button", icon, label="Label", buttonStyle: styleClass, clickHandler = defaultClickHandler }) => {
   return (
-    <button disabled={isDisabled} type={buttonType} onClick={clickHandler} className={`hidden md:block ${buttonStyle}`}>
+    <button disabled={isDisabled} type={buttonType} onClick={clickHandler} className={`hidden md:block ${styleClass}`}>
       <span className='flex-1'>{label}</span>
       {icon && <div className='relative size-6'>{icon}</div>}
     </button>
