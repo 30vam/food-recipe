@@ -1,13 +1,9 @@
 import PropTypes from 'prop-types'
-import { useState } from 'react';
 import Button from './Button'
 import HamburgerMenu from './HamburgerMenu'
 import Logo from '../images/logo.png'
 
 const Navbar = ({logo}) => {
-  // State for toggling on mobile
-  const [open, setOpen] = useState(false);
-
   return (
     <nav className='fixed z-20 flex items-center justify-between w-full px-4 py-2 md:px-20 bg-gradient-to-b from-black to-transparent'>
       <a href="/">
@@ -21,6 +17,7 @@ const Navbar = ({logo}) => {
       </ul>
       
       <Button label='Sign in' buttonStyle={"neon-btn"}/>
+      
       <HamburgerMenu styleClass={'hamburger-menu'}/>
     </nav>
   )
