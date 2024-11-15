@@ -10,7 +10,7 @@ const Navbar = ({logo}) => {
     <nav className='fixed z-20 flex items-center justify-between w-full px-4 py-2 md:px-20 bg-gradient-to-b from-black to-transparent'>
       {/* Website Logo */}
       <a href="/">
-        <img src={logo ?? Logo} alt="Site Logo" className='w-32'/>
+        <img src={logo ?? Logo} alt="Site Logo" className='w-32 transition-all duration-300 hover:drop-shadow-siteLogo'/>
       </a>
 
       <NavMenu itemsArray={navMenuItems} isResponsive={true}/>

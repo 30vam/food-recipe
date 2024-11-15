@@ -5,7 +5,7 @@ const NavMenu = ({itemsArray, isVertical = false, isResponsive = false, otherSty
     <ul className={`flex text-xl relative z-20 text-white text-center ${isVertical ? 'flex-col gap-6 text-2xl' : 'flex-row gap-12'} ${isResponsive && 'hidden md:flex'} ${otherStyles}`}>
       {itemsArray.map((item, index) => (
         <li key={index}>
-          <a href={item.href} className='font-bold transition-colors ease-out hover:text-blue-400'>{item.label}</a>
+          <a href={item.href} className="font-bold transition-all duration-300 ease-out hover:drop-shadow-linkText">{item.label}</a>
         </li>
       ))}
     </ul>
