@@ -1,8 +1,9 @@
-import PropTypes from 'prop-types'
+import PropTypes, { object } from 'prop-types'
 import { useState } from 'react';
 import './HamburgerMenu.css'
+import NavMenu from './NavMenu';
 
-const HamburgerMenu = ({styleClass, ulMenu}) => {
+const HamburgerMenu = ({ulMenuItems, styleClass}) => {
   // State for toggling on mobile
   const [isVisible, setIsVisible] = useState(false);
 
@@ -16,14 +17,15 @@ const HamburgerMenu = ({styleClass, ulMenu}) => {
       <input type="checkbox" role="button" aria-label="Display the menu" onClick={clickHandler} 
       className={`${styleClass} z-30 relative`}></input>
 
-      <div className={`${isVisible ? 'flex opacity-75' : 'hidden opacity-0'} absolute top-0 right-0 z-20 w-full h-dvh px-4 bg-black transition-opacity ease-out`}>
-
+      <div className={`${isVisible ? 'flex bg-opacity-75' : 'hidden bg-opacity-0'} fixed top-0 right-0 z-20 w-full pt-16 flex justify-center h-dvh bg-black`}>
+        <NavMenu itemsArray={ulMenuItems} isVertical={true}/>
       </div>
     </div>
   )
 }
 
 HamburgerMenu.propTypes = {
+  ulMenuItems: PropTypes.arrayOf(object),
   styleClass: PropTypes.string
 }
 

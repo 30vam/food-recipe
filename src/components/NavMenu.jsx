@@ -2,10 +2,10 @@ import PropTypes, { object } from 'prop-types'
 
 const NavMenu = ({itemsArray, isVertical = false, isResponsive = false, otherStyles}) => {
   return (
-    <ul className={`flex gap-12 text-xl text-white ${isVertical ? 'flex-col' : 'flex-row', isResponsive && 'hidden md:flex'} ${otherStyles}`}>
+    <ul className={`flex text-xl relative z-20 text-white text-center ${isVertical ? 'flex-col gap-6 text-2xl' : 'flex-row gap-12'} ${isResponsive && 'hidden md:flex'} ${otherStyles}`}>
       {itemsArray.map((item, index) => (
         <li key={index}>
-          <a href={item.href} className='transition-colors ease-out hover:text-blue-400'>{item.label}</a>
+          <a href={item.href} className='font-bold transition-colors ease-out hover:text-blue-400'>{item.label}</a>
         </li>
       ))}
     </ul>
@@ -13,7 +13,7 @@ const NavMenu = ({itemsArray, isVertical = false, isResponsive = false, otherSty
 }
 
 NavMenu.propTypes = {
-  itemsArray: PropTypes.arrayOf(Object),
+  itemsArray: PropTypes.arrayOf(object),
   isVertical: PropTypes.bool,
   isResponsive: PropTypes.bool,
   otherStyles: PropTypes.string

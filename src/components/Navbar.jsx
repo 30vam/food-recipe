@@ -10,14 +10,12 @@ const Navbar = ({logo}) => {
     <nav className='fixed z-20 flex items-center justify-between w-full px-4 py-2 md:px-20 bg-gradient-to-b from-black to-transparent'>
       {/* Website Logo */}
       <a href="/">
-        <img src={logo ?? Logo} alt="Site Logo" className='relative z-30 w-32'/>
+        <img src={logo ?? Logo} alt="Site Logo" className='w-32'/>
       </a>
 
       <NavMenu itemsArray={navMenuItems} isResponsive={true}/>
-      
       <Button label='Sign in' buttonStyle={"neon-btn"}/>
-      
-      <HamburgerMenu styleClass={'hamburger-menu'}/>
+      <HamburgerMenu ulMenuItems={navMenuItems} styleClass={'hamburger-menu'}/>
     </nav>
   )
 }
