@@ -26,6 +26,8 @@ const GradientFade = ({position = 'bottom'}) => {
   )
 }
 
-GradientFade.propTypes = {}
+GradientFade.propTypes = {
+  position: PropTypes.string
+}
 
 export default GradientFade

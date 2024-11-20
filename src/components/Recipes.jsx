@@ -6,7 +6,7 @@ import FormInput from './FormInput';
 import ItemCard from './ItemCard';
 import { foodData } from '../utils/food-info';
 
-const Recipes = ({props}) => {
+const Recipes = ({itemArray}) => {
   // States
   const [recipes, setRecipes] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -34,7 +34,7 @@ const Recipes = ({props}) => {
           />
         </form>
 
-        <ItemCard />
+        <ItemCard item={foodData[0]}/>
       </section>
   );
 }

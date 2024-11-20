@@ -1,21 +1,24 @@
-import PropTypes, { string } from 'prop-types'
+import PropTypes from 'prop-types'
+import GradientFade from './GradientFade'
 
-const ItemCard = ({imgSrc, name, tags, itemInfo}) => {
+const ItemCard = ({item}) => {
   return (
-    <div className='flex flex-col items-center w-full gap-4'>
-      <img src={imgSrc} alt={`${name} Photo`} className='w-full' />
-      {name}
-      {tags}
-      {itemInfo}
+    <div className='w-full h-[256px] rounded-lg relative'>
+      
+      <img src={item.image} alt={`${item.name} Photo`} className='object-cover w-full h-full' />
+      
+      <GradientFade position="bottom"/>
+      <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-4 px-6 pt-20 text-center text-white'>
+        <h3>{item.name}</h3>
+        <h3>{item.type}</h3>
+        <h3>{item.info}</h3>
+      </div>
     </div>
   )
 }
 
 ItemCard.propTypes = {
-  imgSrc: PropTypes.string,
-  name: PropTypes.string,
-  tags: PropTypes.arrayOf(string),
-  itemInfo: PropTypes.string
+  item: PropTypes.object
 }
 
 export default ItemCard
