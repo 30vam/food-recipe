@@ -24,7 +24,7 @@ const Recipes = ({props}) => {
       <section id='recipes' className='flex items-center justify-center w-full px-4 py-4'>
         <form className='w-full lg:w-1/2'>
           <FormInput type={'search'}
-          placeholder={"Search Recipes! e.g. Cake, Chicken, etc."}
+          placeholder={"جست و جوی غذاها"}
           value={searchQuery}
           name={'recipe-search'}
           handleInputChange={handleInputChange}

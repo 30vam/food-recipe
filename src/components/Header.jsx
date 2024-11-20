@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import HeroImage from './HeroImage'
+import GradientFade from './GradientFade'
 
 const Header = ({title = "TEST", heroImages, type}) => {
   return (
@@ -7,7 +8,7 @@ const Header = ({title = "TEST", heroImages, type}) => {
       <HeroImage heroImages={heroImages}/>
 
       {/* Black to transparent gradient that appears at the bottom of the header */}
-      <div className='absolute bottom-0 w-full h-full bg-gradient-to-t from-black to-transparent'></div>
+      <GradientFade position='bottom'/>
       
       { /* Header title, text, etc. */ }
       <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-8 px-6 pt-20 text-center text-white'>
