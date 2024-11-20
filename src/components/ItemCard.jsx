@@ -12,9 +12,10 @@ const ItemCard = ({imgSrc, name, tags, itemInfo}) => {
 }
 
 ItemCard.propTypes = {
+  imgSrc: PropTypes.string,
   name: PropTypes.string,
   tags: PropTypes.arrayOf(string),
-  info: PropTypes.string
+  itemInfo: PropTypes.string
 }
 
 export default ItemCard

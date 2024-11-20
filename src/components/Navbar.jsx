@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Button from './Button'
 import HamburgerMenu from './HamburgerMenu'
 import Logo from '../images/logo.png'
-import { navMenuItems } from "../utils/shared-data";
+import { navMenuItems } from "../utils/menus";
 import NavMenu from './NavMenu';
 
 const Navbar = ({logo}) => {

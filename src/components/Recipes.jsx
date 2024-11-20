@@ -4,6 +4,7 @@ import searchIcon from '../images/icons/search-icon.png';
 import Loader from './Loader';
 import FormInput from './FormInput';
 import ItemCard from './ItemCard';
+import { foodData } from '../utils/food-info';
 
 const Recipes = ({props}) => {
   // States
@@ -12,8 +13,8 @@ const Recipes = ({props}) => {
   const [recipesLimit, setRecipesLimit] = useState(10);
   const [isLoading, setIsLoading] = useState(false);
 
-   // Functions
-   const handleInputChange = (e) => {
+  // Functions
+  const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
   }
 
