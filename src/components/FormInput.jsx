@@ -10,10 +10,12 @@ const FormInput = ({type, placeholder, required = true, value, name, handleInput
         value={value}
         onChange={handleInputChange}
         required={required}
-        className='bg-white border border-gray-800 text-black text-md rounded-full focus:ring-1 focus:ring-slate-800 focus:border-slate-800 block w-full py-2.5 outline-none pl-12 pr-5 placeholder:text-sm shadow-xl'
+        className='bg-white border border-gray-800 text-black text-md rounded-full focus:ring-1 focus:ring-slate-800 focus:border-slate-800 block w-full py-2.5 outline-none pr-12 pl-5 placeholder:text-sm shadow-xl'
       />
       {iconSrc && (
-        <img src={iconSrc} alt='Input Icon' className='absolute top-[8px] left-0 flex w-8 ml-2 cursor-pointer' />
+        <button className='absolute inset-y-0 right-0 flex items-center w-8 mr-3'>
+          <img src={iconSrc} alt='Input Icon' />
+        </button>
       )}
     </div>
   )
