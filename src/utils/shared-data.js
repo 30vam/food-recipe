@@ -1,5 +1,5 @@
 export const navMenuItems = [
-  {label: 'Home', href: '/'},
-  {label: 'Explore', href: '/explore'},
-  {label: 'Favorites', href: '/favorites'}
+  {label: 'خانه', href: '/'},
+  {label: 'آموزش‌ها', href: '/explore'},
+  {label: 'مورد علاقه‌ها', href: '/favorites'}
 ]

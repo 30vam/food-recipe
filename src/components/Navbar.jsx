@@ -14,7 +14,7 @@ const Navbar = ({logo}) => {
       </a>
 
       <NavMenu itemsArray={navMenuItems} isResponsive={true}/>
-      <Button label='Sign in' buttonStyle={"neon-btn"}/>
+      <Button label='ورود' buttonStyle={"neon-btn"}/>
       <HamburgerMenu ulMenuItems={navMenuItems} styleClass={'hamburger-menu'}/>
     </nav>
   )
