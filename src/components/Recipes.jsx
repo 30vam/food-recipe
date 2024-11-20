@@ -3,6 +3,7 @@ import { useState } from 'react'
 import searchIcon from '../images/icons/search-icon.png';
 import Loader from './Loader';
 import FormInput from './FormInput';
+import ItemCard from './ItemCard';
 
 const Recipes = ({props}) => {
   // States
@@ -21,7 +22,7 @@ const Recipes = ({props}) => {
   }
 
   return (
-      <section id='recipes' className='flex items-center justify-center w-full px-4 py-4'>
+      <section id='recipes' className='flex flex-col items-center justify-center w-full gap-4 px-4 py-4'>
         <form className='w-full lg:w-1/2'>
           <FormInput type={'search'}
           placeholder={"جست و جوی غذاها"}
@@ -31,6 +32,8 @@ const Recipes = ({props}) => {
           iconSrc={searchIcon}
           />
         </form>
+
+        <ItemCard />
       </section>
   );
 }

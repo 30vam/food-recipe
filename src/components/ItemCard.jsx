@@ -1,9 +1,13 @@
-import { info } from 'autoprefixer'
 import PropTypes, { string } from 'prop-types'
 
-const ItemCard = ({name, tags, info}) => {
+const ItemCard = ({imgSrc, name, tags, itemInfo}) => {
   return (
-    <div>ItemCard</div>
+    <div className='flex flex-col items-center w-full'>
+      <img src={imgSrc} alt={`${name} Photo`} className='w-full' />
+      {name}
+      {tags}
+      {itemInfo}
+    </div>
   )
 }
 
