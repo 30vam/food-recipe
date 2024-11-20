@@ -2,7 +2,7 @@ import PropTypes, { string } from 'prop-types'
 
 const ItemCard = ({imgSrc, name, tags, itemInfo}) => {
   return (
-    <div className='flex flex-col items-center w-full'>
+    <div className='flex flex-col items-center w-full gap-4'>
       <img src={imgSrc} alt={`${name} Photo`} className='w-full' />
       {name}
       {tags}
