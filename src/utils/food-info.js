@@ -3,7 +3,9 @@ import { dalgonaCoffeeImg, filletSteakSandwichImg, garlicSoupImg, grilledChicken
 export const dalgonaCoffee = {
   id: 1,
   name: 'قهوه دالگونا',
-  type: 'نوشیدنی',
+  type: 'غذا',
+  subtype: 'نوشیدنی',
+  duration: '۳۰ دقیقه',
   info: 'قهوه دالگونا در سال‌های اخیر بسیار ترند شده و به دلیل بافت فومی و خاص و شکل جذاب طرفداران زیادی پیدا کرده. طرز تهیه آن بسیار ساده و سریع است و فقط 3 ماده اولیه لازم دارد. در ادامه طرز تهیه آن را ببینید.',
   ingredients: [{name: 'شکر سفید', amount: 'چهار قاشق غذاخوری'}, {name: 'پودر نسکافه', amount: 'چهار قاشق غذاخوری'}, {name: 'آب جوش', amount: 'چهار قاشق غذاخوری'}, {name: 'شیر', amount: 'یک پیمانه'}],
   image: dalgonaCoffeeImg,
@@ -21,7 +23,9 @@ export const dalgonaCoffee = {
 export const grilledChickenSandwich = {
   id: 2,
   name: 'ساندوچ چیکن گریل',
-  type: 'میان‌وعده',
+  type: 'غذا',
+  subtype: 'میان‌وعده',
+  duration: '۲ ساعت',
   info: 'ساندویچ چیکن گریل در دسته سالم‌ترین ساندویچ‌ها قرار می‌گیرد. زیرا در طبخ آن از مرغ به عنوان منبع پروتئین استفاده می‌شود',
   ingredients: [{name: 'سینه مرغ', amount: 'صد الی صد و پنجاه گرم'}, {name: 'فلفل سیاه', amount: 'یک قاشق چایخوری'}, {name: 'پودر پاپریکا', amount: 'یک قاشق غذاخوری'}, {name: 'پودر تخم گشنیز', amount: 'نصف قاشق چای خوری'}, {name: 'نمک آرومات', amount: 'یک قاشق چای‌خوری'}, {name:'سیر تازه', amount: 'دو حبه'}, {name: 'رزماری', amount: 'یک شاخه'}, {name: 'روغن زیتون', amount: 'دو قاشق غذاخوری'}, {name: 'گوجه‌فرنگی', amount: 'یک عدد'}, {name: 'خیارشور', amount: 'چهار عدد'}, {name: 'برگ ریحان', amount: 'پنجاه گرم'}, {name: 'سس ساندویچ', amount: 'دو قاشق غذاخوری'}],
   image: grilledChickenSandwichImg,
@@ -52,7 +56,9 @@ export const grilledChickenSandwich = {
 export const filletSteakSandwich = {
   id: 3,
   name: 'ساندویچ فیله استیک',
-  type: 'وعده اصلی',
+  type: 'غذا',
+  subtype: 'وعده اصلی',
+  duration: '۳ ساعت',
   info: 'ساندویچ فیله استیک یک غذای لذیذ و سرشار از پروتئین است و بسیار مناسب برای پذیرایی در مهمانی‌هایتان. در ادامه با طرز تهیه این غذای خوشمزه همراه ما باشید.',
   ingredients: [{name: 'گوشت فیله گوساله یا راسته', amount: 'صد الی صد و پنجاه گرم'}, {name: 'فلفل سیاه', amount: 'یک قاشق چایخوری'}, {name: 'سیر تازه', amount: 'سه حبه'}, {name: 'رزماری', amount: 'یک شاخه'}, {name: 'روغن زیتون', amount: 'دو قاشق غذاخوری'}, {name:'ریحان', amount: 'بیست گرم'}, {name: 'سس ساندویچ', amount: 'به میزان لازم'}, {name: 'گوجه فرنگی', amount: 'یک عدد'}, {name: 'خیارشور', amount: 'ده عدد'}, {name: 'قارچ', amount: 'چهارصد گرم'}, {name: 'آب لیمو ترش', amount: 'یک قاشق غذاخوری'}, {name: 'پودر سیر', amount: 'یک قاشق چای‌خوری'}, {name: 'خامه', amount: 'یک قاشق غذاخوری'}, {name: 'پنیر چدار رنده شده', amount: 'سه قاشق غذاخوری'}, {name: 'نمک', amount: 'یک قاشق چای‌خوری'}],
   image: filletSteakSandwichImg,
@@ -72,7 +78,9 @@ export const filletSteakSandwich = {
 export const garlicSoup = {
   id: 4,
   name: 'سوپ سیر',
-  type: 'پیش غذا',
+  type: 'غذا',
+  subtype: 'پیش غذا',
+  duration: '۲ ساعت',
   info: 'در روزهای سرد زمستان و در دوران سرما خوردگی تغذیه خوب در جهت افزایش ایمنی بدن بسیار اهمیت دارد. سوپ سیر یکی از آن غذاهایی است که می‌توانید در این دوران آن را تهیه و نوش جان کنید.',
   ingredients: [{name: 'خامه', amount: 'یک پیمانه'}, {name: 'سیب زمینی متوسط', amount: 'دو عدد'}, {name: 'پیاز', amount: 'یک عدد'}, {name: 'تره فرنگی بزرگ', amount: 'یک عدد'}, {name: 'روغن مایع', amount: 'یک پیمانه'}, {name:'سیر تازه', amount: 'بیست حبه'}, {name: 'اورگانو', amount: 'یک قاشق چایخوری'}, {name: 'عصاره گوشت', amount: 'هفتصد گرم'}, {name: 'نان تست', amount: 'دو عدد'}, {name: 'جعفری', amount: 'نصف پیمانه'}, {name: 'نمک', amount: 'دو قاشق چای خوری'}, {name: 'فلفل سیاه', amount: 'یک قاشق چای خوری'}],
   image: garlicSoupImg,
@@ -102,7 +110,9 @@ export const garlicSoup = {
 export const lavaCakeRecipe = {
   id: 5,
   name: 'لاوا کیک',
-  type: 'دسر و سالاد',
+  type: 'غذا',
+  subtype: 'دسر و سالاد',
+  duration: '۴ ساعت',
   info: 'لاوا کیک بسیار محبوب است زیرا بافت میانی کیک مملو از شکلات مذاب و نرم است که حین برش کیک بیرون می‌ریزد و آن را هیجان انگیز می‌کند. در ادامه دستور پخت این کیک منحصر به فرد را ملاحظه می‌کنید.',
   ingredients: [{name: 'شکلات سکه‌ای تلخ', amount: 'صد و پنجاه گرم'}, {name: 'کره', amount: 'صد و پنجاه گرم'}, {name: 'آرد', amount: 'یک پیمانه استاندارد'}, {name: 'پودر شکر یا شکر گرانول', amount: 'یک پیمانه استاندارد'}, {name: 'پودر شکلات', amount: 'شش قاشق غذاخوری'}, {name:'عصاره وانیل', amount: 'یک قاشق مرباخوری'}, {name: 'تخم مرغ', amount: 'سه عدد'}, {name: 'زرده تخم مرغ', amount: 'سه عدد'}],
   image: lavaCakeRecipeImg,
@@ -116,8 +126,6 @@ export const lavaCakeRecipe = {
 ترکیب شکلات را با ترکیب تخم مرغ مخلوط می‌کنیم:
 ترکیب شکلات را به مخلوط تخم مرغ درون ظرف هم زن اضافه می‌کنیم و با سرعت کم هم می‌زنیم تا مخلوط شوند. وقتی به خوبی ترکیب شدند هم زن را خاموش می‌کنیم از هم زدن اضافه خودداری می‌کنیم.`
 }
-
-
 
 export const foodData = [
   dalgonaCoffee, grilledChickenSandwich, filletSteakSandwich, garlicSoup, lavaCakeRecipe

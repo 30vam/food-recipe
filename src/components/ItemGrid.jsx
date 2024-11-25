@@ -4,7 +4,8 @@ import searchIcon from '../images/icons/search-icon.png';
 import FormInput from './FormInput';
 import ItemCard from './ItemCard';
 
-const Recipes = ({itemArray}) => {
+
+const Recipes = ({itemArray, inputType, inputPlaceholder, icon = searchIcon, containerId}) => {
   // States
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -16,14 +17,13 @@ const Recipes = ({itemArray}) => {
   const filteredItems = itemArray.filter((item) => searchQuery.toLowerCase() === '' ? item : item.name.toLowerCase().includes(searchQuery))
   
   return (
-      <section className='flex flex-col items-center'>
+      <section id={containerId} className='flex flex-col items-center'>
         <form className='w-full lg:w-1/2'>
-          <FormInput type={'search'}
-          placeholder={"جست و جوی غذاها"}
+          <FormInput type={inputType}
+          placeholder={inputPlaceholder}
           value={searchQuery}
-          name={'recipe-search'}
           handleInputChange={handleInputChange}
-          iconSrc={searchIcon} />
+          iconSrc={icon} />
         </form>
         
         <div className='relative grid items-center justify-center w-full rounded-3xl min-h-[256px] grid-cols-1 gap-8 px-4 py-6 sm:grid-cols-2 xl:grid-cols-3'>
@@ -36,7 +36,11 @@ const Recipes = ({itemArray}) => {
 }
 
 Recipes.propTypes = {
-  itemArray: PropTypes.arrayOf(object)
+  itemArray: PropTypes.arrayOf(object),
+  inputType: PropTypes.string,
+  inputPlaceholder: PropTypes.string,
+  icon: PropTypes.string,
+  containerId: PropTypes.string
 }
 
 export default Recipes

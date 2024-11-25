@@ -1,6 +1,6 @@
 export const navMenuItems = [
   {label: 'خانه', href: '/'},
-  {label: 'غذاها', href: '/explore'},
-  {label: 'دوره‌ها', href: '/courses'},
+  {label: 'غذاها', fragmentLink: 'recipes'},
+  {label: 'دوره‌ها', fragmentLink: 'courses'},
   {label: 'مورد علاقه‌ها', href: '/favorites'}
 ]
