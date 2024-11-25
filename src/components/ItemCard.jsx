@@ -3,17 +3,16 @@ import GradientFade from './GradientFade'
 
 const ItemCard = ({item}) => {
   return (
-    <div className='w-full h-[256px] rounded-lg relative'>
-      
-      <img src={item.image} alt={`${item.name} Photo`} className='object-cover w-full h-full' />
-      
+    <a href={item.url} className='w-full h-[256px] rounded-2xl relative overflow-hidden group'>
+
+      <img src={item.image} alt={`${item.name} Photo`} className='object-cover w-full h-full transition-all duration-500 ease-out group-hover:scale-110' />
       <GradientFade position="bottom"/>
-      <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-4 px-6 pt-20 text-center text-white'>
-        <h3>{item.name}</h3>
-        <h3>{item.type}</h3>
-        <h3>{item.info}</h3>
+      
+      <div className='absolute bottom-0 z-0 flex flex-col w-full gap-2 px-6 text-center text-white transition-all duration-300 select-none hover:text-orange-400'>
+        <h3 className='text-3xl font-bold'>{item.name}</h3>
+        <span className='text-xl font-semibold'>{item.type}</span>
       </div>
-    </div>
+    </a>
   )
 }
 

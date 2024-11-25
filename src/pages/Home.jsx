@@ -1,5 +1,6 @@
 import Header from "../components/Header"
-import Recipes from "../components/Recipes"
+import ItemGrid from "../components/ItemGrid"
+import { foodData } from '../utils/food-info';
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <Header title={'Delicious Food Recipes!'} type={'home'}/>
 
       <main id="recipes" className="w-full px-4 py-2 bg-black md:px-12">
-        <Recipes />
+        <ItemGrid itemArray={foodData} />
       </main>
     </div>
   )
