@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import HeroImage from './HeroImage'
 import GradientFade from './GradientFade'
 
-const Header = ({title = "TEST", heroImages, type}) => {
+const Header = ({title = "TEST", heroImages}) => {
   return (
     <header className='w-full select-none h-dvh'>
       <HeroImage heroImages={heroImages}/>
@@ -12,14 +12,10 @@ const Header = ({title = "TEST", heroImages, type}) => {
       
       { /* Header title, text, etc. */ }
       <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-8 px-6 pt-20 text-center text-white'>
-        <h1 className='text-5xl font-bold sm:text-7xl'>{title}</h1>
-        {/* Only show this if type prop exists (Which page?) */}
-        {type && (
-          <p className='text-xl sm:text-3xl'>Hungry and tired of the same boring food? Don&apos;t worry, We&apos;ve got your back!
-            <br />
-            <span className='hidden text-base sm:text-lg md:block'>Just tell your wife where you found the recipes!</span>
-          </p>
-        )}
+        <h1 className='text-5xl font-bold drop-shadow-xl sm:text-7xl'>{title}</h1>
+        <p className='text-2xl sm:text-3xl drop-shadow-lg'>دیگر دوران تخم‌مرغ شکستن به پایان رسید...
+          <br /><span className='text-lg'>انقلابی نوپا در صنعت آشپزی!</span>
+        </p>
       </div>
     </header>
   )
