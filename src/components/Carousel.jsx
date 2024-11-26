@@ -34,7 +34,8 @@ const Carousel = ({startingCard, children}) => {
 };
 
 Carousel.propTypes = {
-  startingCard: PropTypes.node
+  startingCard: PropTypes.number,
+  children: PropTypes.node
 }
 
 export { Carousel }
