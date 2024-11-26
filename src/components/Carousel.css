@@ -2,7 +2,7 @@
   position: relative;
   width: 23rem;
   height: 23rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   perspective: 500px;
   transform-style: preserve-3d;
 }
@@ -35,6 +35,8 @@
   color: white;
   font-size: 5rem;
   position: absolute;
+  width: 64px;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,14 +46,43 @@
   user-select: none;
   background: unset;
   border: unset;
+  transition: all ease-in-out 500ms;
 
   &.left {
     left:0;
-    transform: translateX(100%) translatey(-50%);
+    transform: translateX(150%) translateY(-50%) rotate(180deg);
   }
   
   &.right {
     right: 0;
-    transform: translateX(-100%) translatey(-50%);
+    transform: translateX(-150%) translateY(-50%);
+  }
+}
+
+.carousel-nav:hover {
+  filter: drop-shadow(0 0 15px #fff);
+  /*filter: drop-shadow( 0 0 5px #f0f);*/
+}
+
+@media screen and (min-width: 640px) {
+  .carousel-nav {
+    width: 64px;
+  }
+}
+
+@media screen and (min-width: 836px) {
+  .carousel-nav {
+    width: 64px;
+    top: 50%;
+    
+    &.left {
+      left: -80%;
+      transform: translateX(100%) translateY(-50%) rotate(180deg);
+    }
+    
+    &.right {
+      right: -80%;
+      transform: translateX(-100%) translateY(-50%);
+    }
   }
 }

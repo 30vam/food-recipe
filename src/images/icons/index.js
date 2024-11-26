@@ -9,5 +9,6 @@ import foodIcon from "./food-icon.png";
 import favoriteIcon from "./favorite-icon.png";
 import courseIcon from "./course-icon.png";
 import faqIcon from "./faq-icon.png";
+import rightArrowIcon from "./right-arrow-icon.png";
 
-export { searchIcon, emailIcon, githubIcon, instagramIcon, telegramIcon, foodIcon, favoriteIcon, courseIcon, faqIcon };
+export { searchIcon, emailIcon, githubIcon, instagramIcon, telegramIcon, foodIcon, favoriteIcon, courseIcon, faqIcon, rightArrowIcon };
