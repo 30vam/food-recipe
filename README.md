@@ -1,1 +1,1 @@
-Food Recipe Website
+A cooking school website.
