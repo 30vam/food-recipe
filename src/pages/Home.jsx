@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import ItemGrid from "../components/ItemGrid"
+import { Carousel, Card } from '../components/Carousel'
 import { foodData } from '../utils/food-info';
 import { courseData } from '../utils/course-info';
 import Faq from "../components/FAQ";
@@ -20,6 +21,11 @@ const Home = () => {
 
         <section id="popular-courses">
           <SectionTitle title='دوره‌های محبوب' icon={favoriteIcon}/>
+          <Carousel>
+            {[...new Array(3)].map((_, i) => (
+              <Card key={i} title={'Card ' + (i + 1)} content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
+            ))}
+    </Carousel>
         </section>
 
         <section id='courses'>
