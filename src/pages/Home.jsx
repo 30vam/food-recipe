@@ -23,7 +23,7 @@ const Home = () => {
         </section>
 
         <section id='courses'>
-          <SectionTitle title='دوره‌های آموزشگاه' icon={courseIcon}/>
+          <SectionTitle title='لیست دوره‌ها' icon={courseIcon}/>
           <ItemGrid itemArray={courseData} inputType='search' inputPlaceholder='جست‌و‌جوی دوره‌ها' /> 
         </section>
 
