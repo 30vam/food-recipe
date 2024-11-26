@@ -2,6 +2,7 @@
   position: relative;
   width: 23rem;
   height: 23rem;
+  margin-bottom: 4rem;
   perspective: 500px;
   transform-style: preserve-3d;
 }
@@ -37,19 +38,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 50%;
+  bottom: -35%;
   z-index: 2;
   cursor: pointer;
   user-select: none;
   background: unset;
   border: unset;
-  
+
   &.left {
-    transform: translateX(-100%) translatey(-50%);
+    left:0;
+    transform: translateX(100%) translatey(-50%);
   }
   
   &.right {
     right: 0;
-    transform: translateX(100%) translatey(-50%);
+    transform: translateX(-100%) translatey(-50%);
   }
 }

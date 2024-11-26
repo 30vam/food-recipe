@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
 import React from 'react';
-import './Carousel.css'
+import PropTypes from 'prop-types'
 import { useState } from 'react';
 import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
+import './Carousel.css'
 
 const CARDS = 5;
 const MAX_VISIBILITY = 3;
@@ -15,7 +15,7 @@ const Card = ({title, content}) => (
 );
 
 const Carousel = ({children}) => {
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(1);
   const count = React.Children.count(children);
   
   return (
