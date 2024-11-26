@@ -10,7 +10,7 @@ const ItemCard = ({item}) => {
   }
   
   return (
-    <a href={item.url} className='w-full select-none h-[256px] rounded-2xl relative overflow-hidden group'>
+    <a href={item.url} className='w-full select-none h-[256px] rounded-[2.5rem] hover:rounded-2xl transition-all ease-in-out duration-500 relative overflow-hidden group border-4 border-black hover:border-orange-400 border-opacity-50'>
 
       <img src={item.image} alt={`${item.name} Photo`} className='object-cover w-full h-full transition-all duration-500 ease-out group-hover:scale-110' />
       <GradientFade position="bottom"/>
