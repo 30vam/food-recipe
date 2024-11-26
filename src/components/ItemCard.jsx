@@ -17,8 +17,8 @@ const ItemCard = ({item}) => {
       
       <div className='absolute bottom-0 z-0 flex items-center justify-between w-full gap-2 px-6 text-center text-white transition-all duration-300 select-none hover:text-orange-400'>
         <div className='flex flex-col items-start gap-1 mb-2'>
-          <h3 className='text-3xl font-bold'>{item.name}</h3>
-          <span className='text-xl font-semibold'>{item.subtype}</span>
+          <h3 className='text-3xl '>{item.name}</h3>
+          <span className='text-xl font-light'>{item.subtype}</span>
         </div>
 
         <div>

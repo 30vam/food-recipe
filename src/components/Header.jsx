@@ -14,7 +14,7 @@ const Header = ({title = "TEST", heroImages}) => {
       <div className='absolute bottom-0 z-10 flex flex-col items-center justify-center w-full h-full gap-8 px-6 pt-20 text-center text-white'>
         <h1 className='text-5xl font-bold drop-shadow-xl sm:text-7xl'>{title}</h1>
         <p className='text-2xl sm:text-3xl drop-shadow-lg'>دیگر دوران تخم‌مرغ شکستن به پایان رسید...
-          <br /><span className='text-lg'>انقلابی نوپا در صنعت آشپزی!</span>
+          <br /><span className='text-xl'>انقلابی نوپا در صنعت آشپزی!</span>
         </p>
       </div>
     </header>
