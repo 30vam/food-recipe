@@ -7,5 +7,6 @@ import Banner6 from "./banner6.jpg";
 import Banner7 from "./banner7.jpg";
 import Banner8 from "./banner8.jpg";
 import Banner9 from "./banner9.jpg";
+import Banner10 from "./banner10.jpg";
 
-export { Banner1, Banner2, Banner3, Banner4, Banner5, Banner6, Banner7, Banner8, Banner9 };
+export { Banner1, Banner2, Banner3, Banner4, Banner5, Banner6, Banner7, Banner8, Banner9, Banner10 };

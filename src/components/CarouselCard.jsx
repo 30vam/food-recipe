@@ -4,7 +4,7 @@ import './Carousel.css'
 
 const CarouselCard = ({ item }) => {
   return (
-    <a href={item.url} className='relative w-full h-full text-justify text-black transition-all duration-300 ease-in-out group carousel-card'>
+    <a href={item.url} className='relative w-full h-full text-justify text-black transition-all duration-300 ease-in-out select-none group carousel-card'>
       <img src={item.image} alt={`${item.name} Photo`} className='object-cover w-full h-full transition-all duration-500 ease-out group-hover:scale-110 rounded-[3rem]' />
       <GradientFade position="bottom"/>
       <div className='absolute bottom-0 right-0 flex flex-col items-center justify-center w-full gap-3 mb-4 text-white transition-all duration-300 ease-in-out hover:text-orange-400'>

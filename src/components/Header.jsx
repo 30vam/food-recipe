@@ -5,8 +5,8 @@ import GradientFade from './GradientFade.jsx'
 const Header = ({title = "TEST", heroImages}) => {
   return (
     <header className='w-full select-none h-dvh'>
-      <HeroImage heroImages={heroImages}/>
-
+      <HeroImage heroImages={heroImages} tailwindStyles='w-full h-full'/>
+      <div className='absolute top-0 left-0 z-0 w-full h-full bg-black opacity-20'></div>
       {/* Black to transparent gradient that appears at the bottom of the header */}
       <GradientFade position='bottom'/>
       

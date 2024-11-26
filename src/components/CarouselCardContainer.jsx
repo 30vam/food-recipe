@@ -17,7 +17,7 @@ const CarouselCardContainer = ({child, i, activeCard, maxVisibility}) => {
   });
 
   return (
-    <div className={`card-container overflow-hidden rounded-[2rem] transition-all ${ ((Math.abs(activeCard - i) > maxVisibility) || !isActive) ? 'hidden md:block' : 'block' }`} style={{
+    <div className={`card-container overflow-hidden rounded-[3rem] hover:rounded-[2rem] transition-all hover:border-orange-400 ${ ((Math.abs(activeCard - i) > maxVisibility) || !isActive) ? 'hidden md:block' : 'block' } ${ isActive && 'md:border-4 border-2' }`} style={{
       '--active': i === activeCard ? 1 : 0,
       '--offset': (activeCard - i) / 3,
       '--direction': Math.sign(activeCard - i),
