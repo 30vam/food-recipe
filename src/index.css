@@ -12,14 +12,6 @@ body {
   font-family: "Nunito", 'Vazirmatn', sans-serif;
 }
 
-body:lang('en-EN') {
-
-}
-
-body:lang('en-EN') {
-  
-}
-
 .custom-btn {
   @apply relative flex-row items-center justify-center px-6 py-2 outline-none;
 }
