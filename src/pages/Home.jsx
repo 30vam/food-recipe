@@ -23,8 +23,8 @@ const Home = () => {
         <section id="popular-courses">
           <SectionTitle title='دوره‌های محبوب' icon={favoriteIcon}/>
           <Carousel startingCard={2} maxVisibility={3}> 
-            {[...new Array(5)].map((_, i) => (
-              <CarouselCard key={i} title={'تیتر کارت' + ' ' + (i + 1)} content='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.'/>
+            {courseData.map((item, i) => (
+              <CarouselCard key={i} item={item}/>
             ))}
     </Carousel>
         </section>
