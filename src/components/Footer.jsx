@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </section>
 
-      <a href="https://github.com/30vam" target='_blank' className="block mt-8 text-sm text-center transition-colors duration-300 ease-out lg:mt-2 lg:text-start lg:mr-2 hover:text-orange-400"><span className="font-bold">طراحی و توسعه: </span>سینا خداپرست</a>
+      <a href="https://github.com/30vam" target='_blank' className="block mt-8 text-sm text-center transition-colors duration-300 ease-out lg:mt-2 lg:text-start lg:mr-2 hover:text-orange-400"><span className="font-bold">طراحی و توسعه: </span>خداپرست</a>
     </footer>
   )
 }

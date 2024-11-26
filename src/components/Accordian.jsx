@@ -9,12 +9,11 @@ const Accordian = ({title, text}) => {
   }
 
   return (
-    <div className='py-1 text-lg text-white'>
-      <button onClick={clickHandler} className='flex items-center justify-between w-full text-2xl transition-all duration-200 hover:text-orange-400'>
-        <span className={`${isOpen ? 'text-orange-400': 'text-white'} transition-colors duration-300`}>{title}</span>
-        {/*isOpen ? <span>-</span> : <span>+</span>*/}
+    <div className='py-1 text-lg text-justify text-white'>
+      <button onClick={clickHandler} className='flex items-center justify-between w-full text-2xl transition-all duration-500 text-start hover:text-orange-400'>
+        <span className={`${isOpen ? 'text-orange-400': 'text-white'} transition-colors duration-300 hover:text-orange-400`}>{title}</span>
         <svg
-          className={`ml-8 ${isOpen ? 'fill-orange-400': 'fill-white'}`}
+          className={`ml-2 ${isOpen ? 'fill-orange-400': 'fill-white'} transition-colors duration-500`}
           width="12"
           height="12"
           xmlns="http://www.w3.org/2000/svg"
@@ -40,13 +39,13 @@ const Accordian = ({title, text}) => {
         </svg>
       </button>
 
-      <div className={`grid overflow-hidden transition-all duration-300 ease-in-out py-2
+      <div className={`grid overflow-hidden transition-all duration-300 ease-in-out
         ${ isOpen ?
-          'grid-rows-[1fr] opacity-100' :
+          'grid-rows-[1fr] opacity-100 pt-4' :
           'grid-rows-[0fr] opacity-0'
         }
       `}>
-        <div className='overflow-hidden font-light'>{text}</div>
+        <div className={`overflow-hidden font-light`}>{text}</div>
       </div>
     </div>
 

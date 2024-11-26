@@ -9,7 +9,7 @@ const NavMenu = ({itemsArray, isVertical = false, isResponsive = false, otherSty
           { item.href ? 
           <a onClick={clickHandler} href={item.href}>{item.label}</a>
           :
-          <Link onClick={clickHandler} to={item.fragmentLink} spy={true} smooth={true} duration={500} offset={-72}>{item.label}</Link> /* Animated scrolls using Link from react-scroll */
+          <Link onClick={clickHandler} to={item.fragmentLink} spy={true} smooth={true} duration={500} offset={-80}>{item.label}</Link> /* Animated scrolls using Link from react-scroll */
           }
         </li>
       ))}
