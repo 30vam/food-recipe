@@ -25,23 +25,22 @@
   width: 100%;
   height: 100%;
   padding: 2rem;
-  background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
-  border-radius: 1rem;
-  color: #9CA3AF;
+  background-color: hsl(0deg, 0%, calc(120% - var(--abs-offset) * 50%));
+  border-radius: 2rem;
+  color: black;
   text-align: justify;
   transition: all 0.3s ease-out;
 }
 
 .carousel-nav {
-  color: white;
   font-size: 5rem;
   position: absolute;
-  width: 64px;
+  width: 56px;
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: -35%;
+  bottom: -30%;
   z-index: 2;
   cursor: pointer;
   user-select: none;
@@ -51,18 +50,17 @@
 
   &.left {
     left:0;
-    transform: translateX(150%) translateY(-50%) rotate(180deg);
+    transform: translateX(100%) translateY(-50%) rotate(180deg);
   }
   
   &.right {
     right: 0;
-    transform: translateX(-150%) translateY(-50%);
+    transform: translateX(-100%) translateY(-50%);
   }
 }
 
 .carousel-nav:hover {
-  filter: drop-shadow(0 0 15px #fff);
-  /*filter: drop-shadow( 0 0 5px #f0f);*/
+  filter: drop-shadow(0 0 15px #FFF);
 }
 
 @media screen and (min-width: 640px) {
