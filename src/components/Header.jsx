@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import HeroImage from './HeroImage'
-import GradientFade from './GradientFade'
+import HeroImage from './HeroImage.jsx'
+import GradientFade from './GradientFade.jsx'
 
 const Header = ({title = "TEST", heroImages}) => {
   return (

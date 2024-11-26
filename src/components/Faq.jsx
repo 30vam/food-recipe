@@ -1,4 +1,4 @@
-import Accordian from './Accordian'
+import Accordian from './Accordian.jsx'
 import { cookingClass2 } from '../images/z-others'
 
 const Faq = () => {

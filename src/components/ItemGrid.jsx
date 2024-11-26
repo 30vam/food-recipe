@@ -1,8 +1,8 @@
 import PropTypes, { object } from 'prop-types'
 import { useState } from 'react'
 import searchIcon from '../images/icons/search-icon.png';
-import FormInput from './FormInput';
-import ItemCard from './ItemCard';
+import FormInput from './FormInput.jsx';
+import ItemCard from './ItemCard.jsx';
 
 
 const Recipes = ({itemArray, inputType, inputPlaceholder, icon = searchIcon}) => {

@@ -1,8 +1,8 @@
 import { Routes, Route, Outlet } from "react-router-dom";
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import Home from "./pages/home"
-import RecipeDetails from "./pages/RecipeDetails";
+import Home from "./pages/Home.jsx"
+import RecipeDetails from "./pages/RecipeDetails.jsx";
 
 // Default layout that exists in all pages
 function Layout() {

@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
-import Button from './Button'
-import HamburgerMenu from './HamburgerMenu'
+import Button from './Button.jsx'
+import HamburgerMenu from './HamburgerMenu.jsx'
 import Logo from '../images/logo.png'
-import { navMenuItems } from "../utils/menus";
-import NavMenu from './NavMenu';
+import { navMenuItems } from "../utils/menus.js";
+import NavMenu from './NavMenu.jsx';
 
 const Navbar = ({logo}) => {
   return (

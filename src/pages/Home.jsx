@@ -1,11 +1,11 @@
-import Header from "../components/Header"
-import ItemGrid from "../components/ItemGrid"
-import { Carousel } from '../components/Carousel'
-import { CarouselCard } from '../components/CarouselCard'
-import { foodData } from '../utils/food-info';
-import { courseData } from '../utils/course-info';
-import Faq from "../components/FAQ";
-import SectionTitle from "../components/SectionTitle";
+import Header from "../components/Header.jsx"
+import ItemGrid from "../components/ItemGrid.jsx"
+import { Carousel } from '../components/Carousel.jsx'
+import { CarouselCard } from '../components/CarouselCard.jsx'
+import { foodData } from '../utils/food-info.js';
+import { courseData } from '../utils/course-info.js';
+import Faq from "../components/FAQ.jsx";
+import SectionTitle from "../components/SectionTitle.jsx";
 import { foodIcon, favoriteIcon, courseIcon, faqIcon } from "../images/icons";        
 
 const Home = () => {

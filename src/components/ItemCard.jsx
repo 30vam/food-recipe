@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import GradientFade from './GradientFade'
+import GradientFade from './GradientFade.jsx'
 
 const ItemCard = ({item}) => {
   let leftsideTitle= '';

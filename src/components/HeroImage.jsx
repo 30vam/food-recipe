@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { selectRandomElement } from "../utils/utils";
+import { selectRandomElement } from "../utils/utils.js";
 
 const HeroImage = ({ heroImages }) => {
   const defaultHeroImages = Object.values(import.meta.glob('../images/banners/*.{jpg, jpeg, png}', { eager: true, query: '?url', import: 'default' }));   

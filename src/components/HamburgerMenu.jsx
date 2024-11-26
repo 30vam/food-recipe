@@ -1,7 +1,7 @@
 import PropTypes, { object } from 'prop-types'
 import { useState } from 'react';
 import './HamburgerMenu.css'
-import NavMenu from './NavMenu';
+import NavMenu from './NavMenu.jsx';
 
 const HamburgerMenu = ({ulMenuItems, styleClass}) => {
   // State for toggling on mobile

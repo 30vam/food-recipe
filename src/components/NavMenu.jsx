@@ -1,5 +1,5 @@
 import PropTypes, { object } from 'prop-types'
-import { Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const NavMenu = ({itemsArray, isVertical = false, isResponsive = false, otherStyles, clickHandler}) => {
   return (
