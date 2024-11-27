@@ -13,8 +13,8 @@ const HeroImage = ({ heroImages , tailwindStyles}) => {
 }
 
 HeroImage.propTypes = {
-  heroImages: PropTypes.arrayOf(PropTypes.string),
-  tailwindStyles: PropTypes.obj
+  heroImages: PropTypes.array,
+  tailwindStyles: PropTypes.string
 }
 
 export default HeroImage

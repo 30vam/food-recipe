@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home.jsx"
 import RecipeDetails from "./pages/RecipeDetails.jsx";
+import CourseDetail from "./pages/CourseDetail.jsx";
 
 // Default layout that exists in all pages
 function Layout() {
@@ -21,7 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
-          <Route path="recipes/:id" element={<RecipeDetails />}/>
+          <Route path="recipes/:recipeId" element={<RecipeDetails />}/>
+          <Route path="courses/:courseId" element={<CourseDetail />}/>
         </Route>
       </Routes>
     </>

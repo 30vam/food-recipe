@@ -1,11 +1,15 @@
-import PropTypes from 'prop-types'
+import { useParams } from 'react-router-dom'
+import { foodData } from '../utils/food-info';
 
-const RecipeDetails = (props) => {
+const RecipeDetails = () => {
+  const { recipeId } = useParams();
+  const recipeItem = foodData.find(item => item.id == recipeId);
+  
   return (
-    <div>RecipeDetails</div>
+    <div className='text-3xl'>
+       { recipeItem.name }
+    </div>
   )
 }
-
-RecipeDetails.propTypes = {}
 
 export default RecipeDetails
